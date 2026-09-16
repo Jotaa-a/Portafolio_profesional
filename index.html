@@ -25,11 +25,17 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks" role="list">
-        <li><a href="#about" class="nav-link">Sobre mí</a></li>
-        <li><a href="#stack" class="nav-link">Stack</a></li>
-        <li><a href="#projects" class="nav-link">Proyectos</a></li>
-        <li><a href="#experience" class="nav-link">Formación</a></li>
-        <li><a href="#contact" class="nav-link nav-cta">Contactar</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="navAbout">Sobre mí</a></li>
+        <li><a href="#stack" class="nav-link" data-i18n="navStack">Stack</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="navProjects">Proyectos</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="navExperience">Formación</a></li>
+        <li><a href="#contact" class="nav-link nav-cta" data-i18n="navContact">Contactar</a></li>
+
+        <li>
+            <button class="language-btn" id="languageBtn" type="button">
+                EN
+            </button>
+        </li>
       </ul>
     </nav>
   </header>
@@ -55,7 +61,9 @@
           />
         </div>
 
-        <div class="hero-badge fade-up">Disponible para trabajar</div>
+        <div class="hero-badge fade-up" data-i18n="available">
+            Disponible para trabajar
+        </div>
 
         <h1 class="hero-name fade-up">
           Juan Angel Mantilla<br />
@@ -69,13 +77,23 @@
         </p>
 
         <p class="hero-desc fade-up">
-          Apasionado por construir experiencias web limpias y funcionales.<br />
-          Enfoque autodidacta, orientado a resultados y en constante aprendizaje.
+            <span data-i18n="heroDescription">
+                Apasionado por construir experiencias web limpias y funcionales.
+            </span>
+            <br />
+            <span data-i18n="heroDescription2">
+                Enfoque autodidacta, orientado a resultados y en constante aprendizaje.
+            </span>
         </p>
 
         <div class="hero-actions fade-up">
-          <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-          <a href="#contact" class="btn btn-outline">Contactar</a>
+            <a href="#projects" class="btn btn-primary" data-i18n="viewProjects">
+                Ver proyectos
+            </a>
+
+            <a href="#contact" class="btn btn-outline" data-i18n="contact">
+                Contactar
+            </a>
         </div>
 
         <div class="hero-social fade-up" aria-label="Redes sociales">
@@ -87,76 +105,84 @@
           </a>
         </div>
       </div>
-
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <span>scroll</span>
-        <div class="scroll-line"></div>
-      </div>
     </section>
 
     <!-- ===== SOBRE MÍ ===== -->
     <section class="section about" id="about" aria-label="Sobre mí">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-tag">01 — about</span>
-          <h2 class="section-title">Sobre mí</h2>
-        </div>
+        <h2 class="section-title" data-i18n="aboutTitle">
+            Sobre mí
+        </h2>
 
         <div class="about-grid">
           <div class="about-text reveal">
-            <p>
-              Soy un desarrollador junior con una fuerte mentalidad autodidacta y pasión por
-              resolver problemas a través del código. Durante los últimos meses me he sumergido
-              en el mundo del desarrollo web de forma intensiva, construyendo una base sólida
-              desde cero.
+            <p data-i18n="aboutParagraph1">
+                Soy un desarrollador junior con una fuerte mentalidad autodidacta y pasión por
+                resolver problemas a través del código. Durante los últimos meses me he sumergido
+                en el mundo del desarrollo web de forma intensiva, construyendo una base sólida
+                desde cero.
             </p>
-            <p>
-              Me enfoco en escribir código limpio, semántico y mantenible. Disfruto tanto del
-              diseño de interfaces como de la lógica detrás de las automatizaciones. Siempre
-              busco aprender, mejorar y aportar valor real en cada proyecto.
+
+            <p data-i18n="aboutParagraph2">
+                Me enfoco en escribir código limpio, semántico y mantenible. Disfruto tanto del
+                diseño de interfaces como de la lógica detrás de las automatizaciones. Siempre
+                busco aprender, mejorar y aportar valor real en cada proyecto.
             </p>
-            <p>
-              Actualmente abierto a oportunidades como desarrollador junior donde pueda
-              seguir creciendo y contribuir con energía y dedicación.
+
+            <p data-i18n="aboutParagraph3">
+                Actualmente abierto a oportunidades como desarrollador junior donde pueda
+                seguir creciendo y contribuir con energía y dedicación.
             </p>
             <div class="about-highlights">
               <div class="highlight-item">
                 <span class="highlight-number">6+</span>
-                <span class="highlight-label">Meses de formación intensiva</span>
+                <span class="highlight-label" data-i18n="monthsTraining">
+                    Meses de formación intensiva
+                </span>
               </div>
               <div class="highlight-item">
                 <span class="highlight-number">10+</span>
-                <span class="highlight-label">Tecnologías aprendidas</span>
+                <span class="highlight-label" data-i18n="technologiesLearned">Tecnologías aprendidas</span>
               </div>
               <div class="highlight-item">
                 <span class="highlight-number">∞</span>
-                <span class="highlight-label">Ganas de aprender</span>
+                <span class="highlight-label" data-i18n="desireToLearn">Ganas de aprender</span>
               </div>
             </div>
           </div>
 
           <aside class="about-card reveal" aria-label="Datos rápidos">
-            <h3 class="about-card-title">Datos rápidos</h3>
+            <h3 class="about-card-title" data-i18n="quickFacts">Datos rápidos</h3>
             <ul class="about-list" role="list">
               <li>
-                <span class="about-list-icon" aria-hidden="true">📍</span>
-                <span>Disponible para trabajar</span>
+                <span class="about-list-icon" aria-hidden="true">
+                  <img src="./img/icon/maletin.png" alt="Disponible para trabajar">
+                </span>
+                <span data-i18n="available">Disponible para trabajar</span>
               </li>
               <li>
-                <span class="about-list-icon" aria-hidden="true">🚀</span>
-                <span>Autodidacta y proactivo</span>
+                <span class="about-list-icon" aria-hidden="true">
+                  <img src="./img/icon/cohete.png" alt="Autodidacta">
+                </span>
+                <span data-i18n="available">Autodidacta y proactivo</span>
               </li>
               <li>
-                <span class="about-list-icon" aria-hidden="true">🌐</span>
-                <span>Web &amp; automatización</span>
+                <span class="about-list-icon" aria-hidden="true">
+                  <img src="./img/icon/sitio-web.png" alt="Automatizaciones">
+                </span>
+                <span data-i18n="available">Web &amp; automatización</span>
               </li>
               <li>
-                <span class="about-list-icon" aria-hidden="true">🤝</span>
-                <span>Trabajo en equipo</span>
+                <span class="about-list-icon" aria-hidden="true">
+                  <img src="./img/icon/usuarios.png" alt="Comunidad">
+                </span>
+                <span data-i18n="available">Trabajo en equipo</span>
               </li>
               <li>
-                <span class="about-list-icon" aria-hidden="true">📚</span>
-                <span>Aprendizaje continuo</span>
+                <span class="about-list-icon" aria-hidden="true">
+                  <img src="./img/icon/libros.png" alt="Aprendizaje">
+                </span>
+                <span data-i18n="available">Aprendizaje continuo</span>
               </li>
             </ul>
           </aside>
@@ -180,7 +206,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
             </div>
             <span class="stack-name">HTML5</span>
-            <span class="stack-level">Sólido</span>
+            <span class="stack-level" data-i18n="solid">Sólido</span>
           </article>
 
           <article class="stack-card reveal" aria-label="CSS">
@@ -188,7 +214,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
             </div>
             <span class="stack-name">CSS3</span>
-            <span class="stack-level">Sólido</span>
+            <span class="stack-level" data-i18n="solid">Sólido</span>
           </article>
 
           <article class="stack-card reveal" aria-label="JavaScript">
@@ -196,7 +222,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
             </div>
             <span class="stack-name">JavaScript</span>
-            <span class="stack-level">En progreso</span>
+            <span class="stack-level" data-i18n="inProgress>En progreso</span>
           </article>
 
           <article class="stack-card reveal" aria-label="Python">
@@ -204,7 +230,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05 1.07.13zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09-.33.22zM21.1 6.11l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.31.33-.25.35-.19.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.04zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z"/></svg>
             </div>
             <span class="stack-name">Python</span>
-            <span class="stack-level">Básico</span>
+            <span class="stack-level" data-i18n="basic">Básico</span>
           </article>
 
           <article class="stack-card reveal" aria-label="MySQL">
@@ -212,7 +238,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.151zM5.77 18.695h-.927a50.854 50.854 0 0 0-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 0 0-.195 4.41H0C.055 17.5.19 16.3.41 15.1h1.15l1.34 4.08h.01l1.35-4.08h1.11c.21 1.52.33 2.7.4 3.595zM9.89 17.1c0 1.05-.66 1.56-1.8 1.56a2.7 2.7 0 0 1-.87-.13v-1.07c.21.07.46.12.7.12.5 0 .74-.25.74-.7V15.1h1.23v2zm3.04-2.83a2.2 2.2 0 0 0-.82.15v-.77c.26-.09.57-.12.9-.12.84 0 1.24.37 1.24 1.07v2.48c-.29.05-.6.07-.94.07-.84 0-1.43-.34-1.43-1.15 0-.7.5-1.05 1.17-1.05h.38v-.54c-.01-.21-.18-.14-.5-.14zm.5 1.67h-.23c-.37 0-.57.17-.57.48 0 .3.18.43.57.43.07 0 .15-.01.23-.02v-.89zm5.17-2.27a2.5 2.5 0 0 0-.7.09v3.76h-1.23v-4.48c.47-.16 1.08-.26 1.93-.26v.89zM24 18.695h-1.23v-6.7H24v6.7zM8.12 10.34c-.56.54-1.21.8-2.06.8-.47 0-.8-.1-1.06-.22V7.65c.2-.08.47-.13.78-.13.75 0 1.26.37 1.26 1.1 0 .5-.22.88-.59 1.12l.03.02.01.02c.08.1.5.41.8.41.42 0 .77-.28.98-.72l.14.3c-.15.35-.23.61-.29.57zm-1.78-.3c-.07 0-.14-.02-.18-.04V8.2c.04-.01.08-.01.13-.01.46 0 .74.32.74.9 0 .6-.29.95-.69.95zm12.18.29c-.11.36-.27.66-.5.9-.23.25-.52.46-.87.6-.35.14-.74.22-1.17.22-.44 0-.85-.07-1.23-.22-.38-.14-.7-.35-.97-.6-.27-.25-.48-.56-.63-.9a3.1 3.1 0 0 1-.23-1.23c0-.44.07-.83.23-1.17.15-.34.37-.63.63-.87.27-.24.6-.43.97-.56.37-.13.77-.2 1.23-.2.44 0 .84.07 1.19.2.35.13.65.32.9.56.25.24.44.53.58.87.14.34.21.73.21 1.17 0 .44-.08.84-.23 1.23zm-1.27-2.1c-.23-.44-.67-.66-1.27-.66-.6 0-1.04.22-1.27.66-.23.43-.34.95-.34 1.56 0 .6.11 1.12.34 1.55.23.44.67.65 1.27.65.6 0 1.04-.21 1.27-.65.23-.43.34-.95.34-1.55 0-.6-.11-1.13-.34-1.56zm-5.74-1.5a3.1 3.1 0 0 0-1.08-.18c-.86 0-1.5.26-1.94.78-.43.52-.65 1.22-.65 2.08 0 .82.2 1.5.6 2.02.4.52 1.03.79 1.88.79.56 0 1.06-.11 1.48-.34V9.03c-.3.19-.7.28-1.15.28-.57 0-.95-.18-1.15-.55-.19-.37-.29-.85-.29-1.44 0-.64.1-1.13.3-1.5.2-.36.55-.55 1.04-.55.34 0 .65.07.96.22l.16-.57zm3.87-1.21c-.33-.13-.67-.2-1.04-.2-.36 0-.67.07-.94.2-.27.14-.5.32-.68.56-.19.23-.33.51-.44.83-.11.32-.16.67-.16 1.04 0 .42.06.8.18 1.14.12.34.3.62.52.84.22.23.49.4.8.52.31.12.66.18 1.04.18.37 0 .72-.07 1.04-.18.32-.12.6-.3.84-.52.24-.23.43-.51.57-.84.14-.33.21-.72.21-1.14 0-.37-.05-.72-.16-1.04a2.3 2.3 0 0 0-.44-.83 2.1 2.1 0 0 0-.7-.56zm.3 3.11c-.07.26-.17.48-.32.66-.15.18-.33.32-.56.42-.22.1-.48.15-.77.15a1.8 1.8 0 0 1-.75-.15 1.6 1.6 0 0 1-.55-.42 1.8 1.8 0 0 1-.33-.66 2.8 2.8 0 0 1-.11-.83c0-.3.04-.59.11-.83.08-.26.18-.49.33-.67.15-.19.34-.34.55-.44.22-.1.47-.15.75-.15.3 0 .55.05.77.15.22.1.41.25.56.44.15.18.25.41.32.67.07.25.1.53.1.83s-.03.58-.1.83z"/></svg>
             </div>
             <span class="stack-name">MySQL</span>
-            <span class="stack-level">Básico</span>
+            <span class="stack-level" data-i18n="solid">Solido</span>
           </article>
 
           <article class="stack-card reveal" aria-label="Git">
@@ -244,7 +270,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 3.79 2 6v12c0 2.21 4.48 4 10 4s10-1.79 10-4V6c0-2.21-4.48-4-10-4zm0 2c4.98 0 8 1.47 8 2s-3.02 2-8 2-8-1.47-8-2 3.02-2 8-2zm0 16c-4.98 0-8-1.47-8-2v-2.23C5.61 17.11 8.74 18 12 18s6.39-.89 8-2.23V18c0 .53-3.02 2-8 2zm0-4c-4.98 0-8-1.47-8-2V11.8c1.61 1.11 4.74 2 8 2s6.39-.89 8-2.2V14c0 .53-3.02 2-8 2zm0-4c-4.98 0-8-1.47-8-2V8.8c1.61 1.11 4.74 2 8 2s6.39-.89 8-2.2V10c0 .53-3.02 2-8 2z"/></svg>
             </div>
             <span class="stack-name">Bases de datos</span>
-            <span class="stack-level">Básico</span>
+            <span class="stack-level" data-i18n="solid">Solido</span>
           </article>
 
           <article class="stack-card reveal" aria-label="n8n automatización">
@@ -252,7 +278,7 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
             </div>
             <span class="stack-name">n8n</span>
-            <span class="stack-level">Básico</span>
+            <span class="stack-level" data-i18n="solid">Solido</span>
           </article>
 
         </div>
@@ -264,8 +290,8 @@
       <div class="container">
         <div class="section-header reveal">
           <span class="section-tag">03 — projects</span>
-          <h2 class="section-title">Proyectos</h2>
-          <p class="section-subtitle">Trabajos desarrollados durante mi formación</p>
+          <h2 class="section-title" data-i18n="projectsTitle">Proyectos</h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">Trabajos desarrollados durante mi formación</p>
         </div>
 
         <div class="projects-grid" id="projectsGrid">
@@ -275,19 +301,19 @@
             <div class="project-thumb project-thumb--placeholder">
               <div class="project-thumb-inner" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                <span>Preview próximamente</span>
+                <span><img src="./img/Tecnostore/inicio.png" alt=""></span>
               </div>
             </div>
             <div class="project-body">
-              <h3 class="project-name">Store Celulares Java</h3>
-              <p class="project-desc">Desarrollo de aplicación en consola implementando tecnologias java y bases de datos para gestionar el funcionamiento
+              <h3 class="project-name" data-i18n="tecnoStoreTitle">Store Celulares Java</h3>
+              <p class="project-desc" data-i18n="tecnoStoreDescription">Desarrollo de aplicación en consola implementando tecnologias java y bases de datos para gestionar el funcionamiento
                 de un local Store de celulares.</p>
               <div class="project-tech" aria-label="Tecnologías usadas">
                 <span class="tech-tag">Java 17</span>
                 <span class="tech-tag">SQL</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/Jotaa-a/TecnoStore.git" class="btn btn-sm btn-primary" aria-label="Ver demo del proyecto">Demo</a>
+                <a href="https://github.com/Jotaa-a/TecnoStore.git" class="btn btn-sm btn-primary" aria-label="Ver demo del proyecto" data-i18n="demo">Demo</a>
                 <a href="https://github.com/Jotaa-a/TecnoStore.git" class="btn btn-sm btn-ghost" aria-label="Ver código en GitHub">
                   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
                   GitHub
@@ -540,5 +566,6 @@
   </button>
 
   <script src="js/app.js"></script>
+  <script src="js/translator.js"></script>
 </body>
 </html>

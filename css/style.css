@@ -456,7 +456,7 @@ ul { list-style: none; }
 
 .hero-social {
   display: flex;
-  gap: 14px;
+  gap: 60px;
   justify-content: center;
 }
 
@@ -1300,4 +1300,23 @@ ul { list-style: none; }
   .hero-scroll-hint, .hero-photo-ring { display: none; }
   body { background: #fff; color: #000; }
   .section { padding: 32px 0; }
+}
+
+
+.language-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: inherit;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+    transform: translateY(-2px);
+    border-color: currentColor;
 }
